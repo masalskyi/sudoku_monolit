@@ -67,5 +67,5 @@ confuse 1 vs 7 and vice versa.
 
 ### Solve
 I turned the sudoku solving problem into problem of exact cover and implemented
-the [Knuth's Algorithm X] (https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X). As the solution is kind a bruteforce 
+the [Knuth's Algorithm X](https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X). As the solution is kind a bruteforce 
 I decided to implement it in C++ and create bindings for Python.
