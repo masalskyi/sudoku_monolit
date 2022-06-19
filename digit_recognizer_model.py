@@ -21,7 +21,7 @@ class DigitRecognizerModel:
 
     def predict(self, image, size):
         boxes = image_preprocess(image, size)
-        predictions = self.model.predict(boxes, verbose=0)
+        predictions = self.model.predict(boxes, verbose=0, batch_size=size**4)
         classes = [0 for _ in range(len(predictions))]
         for i in range(len(predictions)):
             classes[i] = self._get_class(predictions[i])
