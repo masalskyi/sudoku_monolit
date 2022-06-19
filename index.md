@@ -30,7 +30,7 @@ a big area of image it probably will be detected.
 
 ### Recognition
 To solve this task the convolutional neural network is proposed. Using the same model architecture I achieved to get 
-a good place in [kaggle mnist competition](https://www.kaggle.com/competitions/digit-recognizer/)(In 19 June 2022 i was in 172 place).
+a good place in [kaggle mnist competition](https://www.kaggle.com/competitions/digit-recognizer/) (In 19 June 2022 i was in 172 place).
 Model architecture:
 ```python
 import tensorflow.keras.layers as layers
@@ -64,3 +64,8 @@ data were collect from [here](https://www.kaggle.com/datasets/kshitijdhama/print
 there were a small dataset that I collect by myself. It was based on images from common sudoku application in Ubuntu. 
 My custom dataset were added, because based only on dataset from kaggle, there were occurrences that model 
 confuse 1 vs 7 and vice versa.
+
+### Solve
+I turned the sudoku solving problem into problem of exact cover and implemented
+the [Knuth's Algorithm X] (https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X). As the solution is kind a bruteforce 
+I decided to implement it in C++ and create bindings for Python.
