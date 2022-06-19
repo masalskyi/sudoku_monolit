@@ -62,7 +62,7 @@ def reorder(points: np.ndarray):
     return new_points
 
 def pipeline(image, debug = False):
-    image = cv2.resize(image, (1000, 592))
+    # image = cv2.resize(image, (1000, 592))
     preprocessed = preprocess(image, debug)
     biggest = get_contour(preprocessed)
     if biggest is None:
